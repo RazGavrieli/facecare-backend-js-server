@@ -13,14 +13,17 @@
   ],
   "emulators": {
     "functions": {
-      "port": 5005
+      "port": 5009
     },
     "database": {
-      "port": 9005
+      "port": 9009
     },
     "ui": {
       "enabled": true
     },
-    "singleProjectMode": true
+    "singleProjectMode": true,
+    "pubsub": {
+      "port": 8002
+    }
   }
 }
