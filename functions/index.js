@@ -8,7 +8,7 @@ exports.test = functions.region('us-central1').https.onRequest(async () => { // 
     try {
     console.log("cleaning old dates")
     const root = await admin.database().ref().get();
-    var afterData = root.val(); // data after the write
+    var afterData = root.val(); // data
 
     openAppointments = afterData['OpenAppointment']
     newOpenAppointments = {}
